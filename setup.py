@@ -217,18 +217,18 @@ def main():
         # Check Python version
         check_python_version()
         
-        # # Install requirements
-        # if not install_requirements():
-        #     print("❌ Setup failed at dependency installation")
-        #     sys.exit(1)
+        # Install requirements
+        if not install_requirements():
+            print("❌ Setup failed at dependency installation")
+            sys.exit(1)
         
-        # # Verify packages
-        # if not check_required_packages():
-        #     print("❌ Setup failed at package verification") 
-        #     sys.exit(1)
+        # Verify packages
+        if not check_required_packages():
+            print("❌ Setup failed at package verification") 
+            sys.exit(1)
         
-        # # Create directories
-        # create_directories()
+        # Create directories
+        create_directories()
         
         # Setup database
         setup_database()
