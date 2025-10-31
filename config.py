@@ -28,7 +28,12 @@ API_DESCRIPTION = "🤖 Enterprise-grade DevOps Issue Resolution & Pipeline Trou
 DATA_FILE = "data/DevOps-Data.xlsx"
 MODEL_CACHE_DIR = "models/"
 FAISS_INDEX_FILE = "devops_faiss.index"
-PROCESSED_DATA_FILE = "devops_processed.pkl"
+
+# Pipeline Integration Settings (for demo purposes - use environment variables in production)
+JENKINS_USER = None  # Set to None to use environment variables
+JENKINS_PASS = None  # Set to None to use environment variables  
+JENKINS_CA_BUNDLE = None  # Set CA bundle path or None to use environment variables
+
 
 # DevOps Categories (for enhanced analysis)
 DEVOPS_CATEGORIES = [
